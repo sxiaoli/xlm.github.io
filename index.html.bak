@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>流量卡店铺推荐</title>
+<!-- 引入外部CSS文件 -->
+<link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>流量卡店铺</h1>
+<div class="announcement-container">
+        <ul class="announcement-list">
+            <li><a href="https://172.lot-ml.com/h5orderEn/index?pudID=a815b3887ab3522a&userid=a4061d1ff6584527" class="no-underline">山东电信｜29元80G+100分钟｜山东专属卡，只发山东</a></li>
+            <li><a href="https://172.lot-ml.com/h5orderEn/index?pudID=52a3ed15bb6a7213&userid=a4061d1ff6584527" class="no-underline">山东联通｜29元80G+100分钟｜山东专属卡，只发山</a></li>
+
+            <!-- 更多公告 -->
+        </ul>
+    </div>
+
+    <script src="static/js/gonggao.js"></script>
+    <div class="footer2">
+   购买流量卡｜联系客服｜领50元红包<br>
+   </div>
+        
+    <div class="download-item">
+        <h3>流量卡店铺①</h3>
+        <p>描述：运营商官方正品｜高速带你飞</p>
+        <p>类型：大流量+超低月租</p>
+        <a href="https://haokawx.lot-ml.com/Product/Index/134950" download>查看详情</a>
+        <div class="tags">
+            <span class="tag">官方正品</span>
+            <span class="tag">官方可查</span>
+        </div>
+    </div>
+    <div class="download-item">
+        <h3>流量卡店铺②</h3>
+        <p>描述：运营商直营授权｜精选亲民号卡｜严选号卡套餐｜售后至上｜用心做好服务</p>
+        <p>类型：全国流量放心用｜正规卡｜产品全｜无套路｜低月租｜大流量｜长期稳定</p>
+        <a href="https://index.feihuang.vip/hk/index?st=1&mid=24109&sc=24031011443640" download>查看详情</a>
+        <div class="tags">
+            <span class="tag">免费领取</span>
+            <span class="tag">官方可查</span>
+        </div>
+    </div>
+    <div class="download-item">
+        <h3>流量卡店铺③</h3>
+        <p>描述：官方合作｜信息保护｜售后无忧｜全国通用</p>
+        <p>类型：告别流量荒｜月月大流量</p>
+        <a href="https://wap.kaboshihaoka.com/show/?agent_id=61682" download>查看详情</a>
+        <div class="tags">
+            <span class="tag">官方正版</span>
+            <span class="tag">超大流量</span>
+        </div>
+    </div>
+</div>
+</div>
+<div class="footer">
+   copyright © 2024 全网通讯工作室. 保留所有权利。<br>
+        <div class="friend-links">
+        <a href="xz/wx1.html" target="_blank">联系方式</a> |
+        <a href="ystj.html" target="_blank">影视APP</a>
+
+    </div>
+</div>
+</body>
+</html>

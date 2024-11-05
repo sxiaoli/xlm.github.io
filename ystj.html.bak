@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影视APP</title>
+    <!-- 引入外部CSS文件 -->
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>影视APP</h2>
+
+    <div class="link-item">
+        <img src="https://5269.kstore.space/13-00-12-56512.png" alt="xx图标">
+        <div class="link-details">
+            <h3><a href="xz/ysxz.html" target="_blank">OK影视</a></h3>
+            <p>永久免费，无需会员，畅享4K</p>
+            <div class="link-tags">
+                <span>安卓影视</span>
+                <span>TV影视</span>
+                <span>影视软件</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="link-item">
+        <img src="https://5269.kstore.space/13-00-12-56512.png" alt="xx图标">
+        <div class="link-details">
+            <h3><a href="4040.html" target="_blank">影视接口</a></h3>
+            <p>安装OK影视，填入接口，至臻观影</p>
+            <div class="link-tags">
+                <span>OK影视</span>
+                <span>影视接口</span>
+                <span>直播接口</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="link-item">
+        <img src="https://5269.kstore.space/13-00-12-56512.png" alt="xx图标">
+        <div class="link-details">
+            <h3><a href="https://www.weiyun.com/document?fileId=RlFcTkFWbWNcVQ==_016bdf565e1d29280b0e50314d263ca2_1b0ee0db-2300-4ca6-92c6-911086956dba&officeType=pdf&tdsourcetag=s_weiyun_file" target="_blank">使用教程</a></h3>
+            <p>先看教程。下载OK影视，复制影视接口</p>
+            <div class="link-tags">
+                <span>OK影视</span>
+                <span>影视接口</span>
+                <span>使用教程</span>
+            </div>
+        </div>
+    </div>
+    
+    </div>  
+
+<div class="footer">
+    copyright © 2024 全网通讯工作室. 保留所有权利。<br>
+         <div class="friend-links">
+        <a href="xz/wx1.html" target="_blank">联系方式</a> |
+        <a href="ystj.html" target="_blank">影视APP</a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
