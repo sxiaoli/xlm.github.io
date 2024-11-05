@@ -1,0 +1,84 @@
+/* 前端:img */
+/* 后端:译子(铬中云) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.error-container {
+    margin: auto;
+    max-width: 600px; /* Adjust this value based on your design needs */
+}
+
+.error-code {
+    font-size: 6em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.error-description {
+    font-size: 2em;
+    margin-bottom: 16px;
+    color: #666;
+}
+
+.error-message {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 32px;
+}
+
+.btn-home {
+    padding: 10px 25px;
+    font-size: 1em;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-home:hover {
+    background-color: #0056b3;
+}
+
+.icon {
+    color: #007BFF;
+    font-size: 2em;
+    margin-bottom: 16px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .error-code {
+        font-size: 4em;
+    }
+    .error-description {
+        font-size: 1.5em;
+    }
+    .icon {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-code {
+        font-size: 3em;
+    }
+    .error-description {
+        font-size: 1.2em;
+    }
+    .icon {
+        font-size: 1.2em;
+    }
+}
+/* 前端:img */
+/* 后端:译子(铬中云) */

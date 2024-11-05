@@ -1,0 +1,148 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.resource-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 300px;
+    margin: 20px auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.resource-card:hover {
+    transform: translateY(-3px);
+}
+
+.resource-title {
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+}
+
+.resource-intro {
+    margin-top: 15px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.resource-tags {
+    margin-top: 10px;
+    color: #555;
+    font-size: 12px;
+    text-align: center;
+}
+
+.resource-tags span {
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.resource-tags span:hover {
+    background-color: #eaeaea;
+}
+
+.resource-images {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.resource-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.resource-image1 {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.resource-image:hover {
+    opacity: 0.8;
+}
+
+.download-button {
+    display: block;
+    width: auto;
+    padding: 8px 16px;
+    background: #50b3a2;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-button:hover {
+    background: #328385;
+}
+
+.download-button i {
+    margin-right: 5px;
+}
+
+.stats {
+    text-align: center;
+    margin-top: 10px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust spacing between stats */
+}
+
+.stats i {
+    margin-right: 5px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 600px) {
+    .resource-card {
+        width: 40%;
+    }
+}
+
+@media (min-width: 768px) {
+    .resource-card {
+        width: 30%;
+    }
+}
+
+@media (min-width: 992px) {
+    .resource-card {
+        width: 25%;
+    }
+}

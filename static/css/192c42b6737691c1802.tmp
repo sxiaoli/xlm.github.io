@@ -1,0 +1,43 @@
+/* 前端:img */
+/* 后端:译子(铬中云) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ec1;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.scrolling-announcements {
+    white-space: nowrap; /* 不换行 */
+    overflow: hidden; /* 隐藏溢出 */
+    box-sizing: border-box; /* 包含边框和内边距 */
+    width: 100%; /* 宽度 */
+    height: 40px; /* 高度 */
+    line-height: 40px; /* 垂直居中文本 */
+    background-color: #f1f1f1; /* 背景颜色 */
+    position: relative; /* 相对定位 */
+}
+
+.scrolling-announcements ul {
+    display: flex; /* 使用弹性布局 */
+    list-style-type: none; /* 移除列表默认符号 */
+    margin: 0; /* 清除默认外边距 */
+    padding: 0; /* 清除默认内边距 */
+    animation: scrollText 20s linear infinite; /* 动画 */
+}
+
+@keyframes scrollText {
+    0% { transform: translateX(100%); } /* 开始时全部在视图之外 */
+    100% { transform: translateX(-100%); } /* 结束时全部在视图之外 */
+}
+
+.scrolling-announcements a {
+    text-decoration: none; /* 移除链接下划线 */
+    color: #000; /* 链接颜色 */
+    padding: 0 10px; /* 给链接一点内边距 */
+    transition: color 0.3s ease-in-out; /* 鼠标悬停过渡效果 */
+}
+
+.scrolling-announcements a:hover {
+    color: #ff0000; /* �

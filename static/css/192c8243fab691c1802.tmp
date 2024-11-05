@@ -1,0 +1,116 @@
+/* 前端:img */
+/* 后端:译子(铬中云) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ec1;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+.marquee a {
+  text-decoration: none; /* 去除下划线 */
+  color: inherit;
+  margin-right: 20px; /* 公告之间的间距，可调整 */
+}
+
+.marquee span {
+  display: inline-block;
+}
+
+
+    #scrollingAnnouncements {
+        overflow: hidden; /* 隐藏超出的内容 */
+        white-space: nowrap; /* 单行显示 */
+        width: 100%; /* 宽度100% */
+        position: relative; /* 相对定位 */
+        padding: 10px; /* 内边距 */
+        border: 1px solid #ccc; /* 边框 */
+        background-color: #f8f8f8; /* 背景颜色 */
+    }
+
+    #scrollingAnnouncements ul {
+        list-style-type: none; /* 移除列表项符号 */
+        margin: 0;
+        padding: 0;
+        display: inline-block; /* 使用内联块级显示 */
+        animation: scrollText 10s linear infinite; /* 使用动画滚动 */
+    }
+
+    @keyframes scrollText {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-1 * 100%)); } /* 计算移动的距离 */
+    }
+
+    #scrollingAnnouncements .announcement-link {
+        color: #007bff; /* 文本颜色 */
+        text-decoration: none; /* 去掉下划线 */
+    }
+
+    #scrollingAnnouncements .announcement-link:hover {
+        text-decoration: underline; /* 鼠标悬停时显示下划线 */
+    }
+
+
+
+.announcement-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background-color: #f0f0f0; /* 滚动条背景颜色 */
+    border: 1px solid #ccc; /* 滚动条边框颜色 */
+}
+
+.announcement-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+}
+
+.announcement-list li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.announcement-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+.no-underline {
+    text-decoration: none !important;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+#announcement-list {
+    display: flex; /* 使用弹性布局 */
+    list-style-type: none; /* 移除列表默认符号 */
+    margin: 0; /* 清除默认外边距 */
+    padding: 0; /* 清除默认内边距 */
+    animation: scrollText 20s linear infinite; /* 动画 */
+}
+
+@keyframes scrollText {
+    0% { transform: translateX(100%); } /* 开始时全部在视图之外 */
+    100% { transform

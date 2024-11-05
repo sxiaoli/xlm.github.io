@@ -1,0 +1,353 @@
+/* 前端:img */
+/* 后端:译子(铬中云) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ec1;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+.marquee a {
+  text-decoration: none; /* 去除下划线 */
+  color: inherit;
+  margin-right: 20px; /* 公告之间的间距，可调整 */
+}
+
+.marquee span {
+  display: inline-block;
+}
+
+
+    #scrollingAnnouncements {
+        overflow: hidden; /* 隐藏超出的内容 */
+        white-space: nowrap; /* 单行显示 */
+        width: 100%; /* 宽度100% */
+        position: relative; /* 相对定位 */
+        padding: 10px; /* 内边距 */
+        border: 1px solid #ccc; /* 边框 */
+        background-color: #f8f8f8; /* 背景颜色 */
+    }
+
+    #scrollingAnnouncements ul {
+        list-style-type: none; /* 移除列表项符号 */
+        margin: 0;
+        padding: 0;
+        display: inline-block; /* 使用内联块级显示 */
+        animation: scrollText 10s linear infinite; /* 使用动画滚动 */
+    }
+
+    @keyframes scrollText {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-1 * 100%)); } /* 计算移动的距离 */
+    }
+
+    #scrollingAnnouncements .announcement-link {
+        color: #007bff; /* 文本颜色 */
+        text-decoration: none; /* 去掉下划线 */
+    }
+
+    #scrollingAnnouncements .announcement-link:hover {
+        text-decoration: underline; /* 鼠标悬停时显示下划线 */
+    }
+
+
+
+.announcement-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background-color: #f0f0f0; /* 滚动条背景颜色 */
+    border: 1px solid #ccc; /* 滚动条边框颜色 */
+}
+
+.announcement-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    animation: scroll 40s linear infinite;
+}
+
+.announcement-list li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.announcement-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+.no-underline {
+    text-decoration: none !important;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+#announcement-list {
+    display: flex; /* 使用弹性布局 */
+    list-style-type: none; /* 移除列表默认符号 */
+    margin: 0; /* 清除默认外边距 */
+    padding: 0; /* 清除默认内边距 */
+    animation: scrollText 20s linear infinite; /* 动画 */
+}
+
+@keyframes scrollText {
+    0% { transform: translateX(100%); } /* 开始时全部在视图之外 */
+    100% { transform: translateX(-100%); } /* 结束时全部在视图之外 */
+}
+
+#announcement-list li {
+    flex-shrink: 0; /* 防止列表项缩小 */
+}
+
+#announcement-list a {
+    text-decoration: none; /* 移除链接下划线 */
+    color: #000; /* 链接颜色 */
+    padding: 0 10px; /* 给链接一点内边距 */
+    transition: color 0.3s ease-in-out; /* 鼠标悬停过渡效果 */
+}
+
+#announcement-list a:hover {
+    color: #ff0000; /* 鼠标悬停时链接颜色变化 */
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #02952f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.download-item {
+    background: #bdc7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.download-item:hover {
+    transform: translateY(-10px);
+}
+
+.download-item h3 {
+    margin: 0;
+    color: #000000;
+}
+
+.download-item p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #2c3e70;
+}
+
+.download-item a {
+    display: inline-block;
+    background: #16a085;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.download-item a:hover {
+    background: #1abc9c;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 0.9em;
+}
+
+.footer2 {
+    text-align: center;
+    padding: 14px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* 添加的响应式设计样式 */
+@media (max-width: 768px) {
+    .container {
+        width: auto;
+        padding: 10px;
+    }
+    .download-item {
+        padding: 10px;
+    }
+    .download-item h3 {
+        font-size: 1.2em;
+    }
+    .download-item p {
+        font-size: 0.9em;
+    }
+    .footer {
+        font-size: 12px;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #007BFF;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.link-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.link-details {
+    flex-grow: 1;
+}
+
+.link-details h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: #007BFF;
+}
+
+.link-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.link-tags {
+    margin-top: 5px;
+}
+
+.link-tags span {
+    background-color: #007BFF;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.link-item a {
+    text-decoration: none;
+}
+
+/* 底部样式 */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #007BFF;
+    color: white;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.friend-links a {
+            text-decoration: none; /* 去掉下划线 */
+            color: #000000; /* 链接颜色 */
+        }
+
+        /* 设置链接容器的样式 */
+.friend-links {
+            text-align: center; /* 居中文本 */
+            margin-top: 20px; /* 上边距 */
+        }
+
+        /* 鼠标悬停时改变颜色 */
+.friend-links a:hover {
+            color: #FF0000; /* 悬停时的颜色 */
+        }
+
+
+
+/* 前端:img */
+/* 后端:译子(铭中云) */
