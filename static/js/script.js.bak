@@ -1,0 +1,26 @@
+// script.js
+document.addEventListener('DOMContentLoaded', function() {
+    const announcementContent = document.querySelector('.announcement-content');
+    let currentPage = 0;
+    const announcements = [
+        '<a href="http://example.com" target="_blank">公告1的链接</a>',
+        '公告2的内容',
+        '公告3的内容',
+        // 更多公告...
+    ];
+
+    function showAnnouncement(index) {
+        announcementContent.innerHTML = announcements[index];
+    }
+
+    function autoSwitchAnnouncement() {
+        showAnnouncement(currentPage);
+        currentPage = (currentPage + 1) % announcements.length;
+    }
+
+    // 每5秒钟切换一次公告
+    setInterval(autoSwitchAnnouncement, 5000);
+
+    // 初始化显示第一个公告
+    showAnnouncement(currentPage);
+});
