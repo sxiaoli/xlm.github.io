@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源下载页</title>
+    <link rel="stylesheet" href="../static/css/xz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div class="resource-card">
+        <h1 class="resource-title">微信｜扫一扫</h1>
+
+        <div class="resource-tags">
+            <span>影视APP</span>
+            <span>流量卡</span>
+            <span>影视接口</span>
+        </div>
+        <div class="resource-images">
+            
+            <img src="https://5269.kstore.space/IMG_20241023_200943.png" alt="图" class="resource-image">
+        </div>
+        <a href="https://5269.kstore.space/IMG_20241023_200943.png" class="download-button">
+            <i class="fas fa-download"></i>  截图｜扫码
+        </a>
+        <div class="stats">
+            <div class="stat-item">
+                <i class="fas fa-eye"></i> 工作时间
+            </div>
+              </div>
+            <div class="stats">
+            <div class="stat-item">
+                <i class="fas fa-eye"></i> 9:00--21:00
+            </div>
+        </div>
+    </div>
+</body>
+</html>

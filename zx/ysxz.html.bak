@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源下载页</title>
+    <link rel="stylesheet" href="../static/css/xz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div class="resource-card">
+        <h1 class="resource-title">OK影视</h1>
+        <p class="resource-intro">简介：OK影视｜4K观影｜无需会员</p>
+        <div class="resource-tags">
+            <span>影视大全</span>
+            <span>实时更新</span>
+            <span>永久免费</span>
+        </div>
+        <div class="resource-images">
+            <img src="https://5269.kstore.space/13-00-12-56512.png" alt="图" class="resource-image">
+
+        </div>
+        <a href="https://pan.quark.cn/s/3334d8f93c64" class="download-button">
+            <i class="fas fa-download"></i> 下载资源
+        </a>
+        <div class="stats">
+            <div class="stat-item">
+                <i class="fas fa-download"></i> 下载次数：1500次
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-eye"></i> 浏览次数：2000次
+            </div>
+        </div>
+    </div>
+</body>
+</html>
